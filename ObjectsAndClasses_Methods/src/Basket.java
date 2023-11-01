@@ -2,9 +2,15 @@ public class Basket {
 
     private static int count = 0;
     private String items = "";
-    private int totalPrice = 0;
+    private static int totalPrice = 0;
     private int limit;
-    private double totalWeight = 0;
+    private static double totalWeight = 0;
+    private static int totalCount = 0;
+    public static int noOfObjects = 0;
+
+    {
+        noOfObjects += 1;
+    }
 
 
     public Basket() {
@@ -24,11 +30,12 @@ public class Basket {
         this.totalPrice = totalPrice;
     }
 
-    public Basket(String items, int totalPrice, double totalWeight) {
+    public Basket(String items, int totalPrice, double totalWeight, int totalCount) {
         this();
         this.items = this.items + items;
         this.totalPrice = totalPrice;
         this.totalWeight = totalWeight;
+        this.totalCount = totalCount;
     }
 
     public static int getCount() {
@@ -45,6 +52,16 @@ public class Basket {
 
     public void add(String name, int price, int count) {
         add(name, price, 1, 0);
+    }
+
+    public static double average_product_Price() {
+        double average = (double) totalPrice / totalCount;
+        return average;
+    }
+
+    public static double averageCheck() {
+        double check = (double) totalPrice / Basket.noOfObjects;
+        return check;
     }
 
     public void add(String name, int price, int count, double weight) {
@@ -66,20 +83,26 @@ public class Basket {
                 count + " шт. - " + price + " / " + weight + "kg";
         totalPrice = totalPrice + count * price;
         totalWeight = totalWeight + count * weight;
+        totalCount = totalCount + count;
     }
 
     public void clear() {
         items = "";
         totalPrice = 0;
         totalWeight = 0;
+        totalCount = 0;
     }
 
-    public int getTotalPrice() {
+    public static int getTotalPrice() {
         return totalPrice;
     }
 
-    public double getTotalWeight() {
+    public static double getTotalWeight() {
         return totalWeight;
+    }
+
+    public static int getTotalCount() {
+        return totalCount;
     }
 
     public boolean contains(String name) {
