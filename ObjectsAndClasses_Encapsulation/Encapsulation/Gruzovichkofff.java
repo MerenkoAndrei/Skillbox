@@ -1,4 +1,4 @@
-import java.awt.*;
+package ObjectsAndClasses_Encapsulation.Encapsulation;
 
 public class Gruzovichkofff {
     private final double dimensions;

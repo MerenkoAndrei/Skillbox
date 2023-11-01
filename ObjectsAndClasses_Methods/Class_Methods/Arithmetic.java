@@ -1,3 +1,5 @@
+package ObjectsAndClasses_Methods.Class_Methods;
+
 import java.util.Scanner;
 
 public class Arithmetic {

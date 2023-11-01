@@ -1,3 +1,5 @@
+package ObjectsAndClasses_Methods.Class_Methods;
+
 public class Main {
 
     public static void main(String[] args) {

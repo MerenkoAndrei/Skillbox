@@ -1,3 +1,5 @@
+package ObjectsAndClasses_Encapsulation.Encapsulation;
+
 import java.util.Scanner;
 public class Elevator {
     private static int currentFloor = 1;
