@@ -1,4 +1,4 @@
-package ObjectsAndClasses_Encapsulation.Encapsulation;
+package Encapsulation;
 
 public class Gruzovichkofff {
     private final double dimensions;

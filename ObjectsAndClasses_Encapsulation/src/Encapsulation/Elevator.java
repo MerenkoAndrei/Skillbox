@@ -1,4 +1,4 @@
-package ObjectsAndClasses_Encapsulation.Encapsulation;
+package Encapsulation;
 
 import java.util.Scanner;
 public class Elevator {

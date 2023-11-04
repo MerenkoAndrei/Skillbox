@@ -1,4 +1,4 @@
-package ObjectsAndClasses_Methods.Class_Methods;
+package Class_Methods;
 
 import java.util.Scanner;
 

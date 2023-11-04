@@ -1,6 +1,7 @@
-package ObjectsAndClasses_Methods.Class_Methods;
+package Class_Methods;
 
-public class Basket {
+public class
+Basket {
 
     private static int count = 0;
     private String items = "";
