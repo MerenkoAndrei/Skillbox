@@ -11,8 +11,8 @@ public class Computer {
         Keyboard keyboard1 = new Keyboard("Sven", "red", 0.650);
         Computer C1 = new Computer(Vender.ASER, "DEXP", processor1, R1, screen1, storageOfInformation1, keyboard1);
         System.out.println(C1);
-        System.out.println("___________________________________");
-        System.out.println("___________________________________");
+        System.out.println("____________________________________");
+        System.out.println("____________________________________");
         Processor processor2 = new Processor(2.7,
                 6, "AMD_RISEN7", 0.130);
         Random_access_memory R2 = new Random_access_memory("Kingston", 16, 0.150);
